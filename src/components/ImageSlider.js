@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Carousel from 'react-bootstrap/Carousel'
 import data from '../data/slider-data.json'
 
+import './Slider.css';
+
 
 class ImageSlider extends Component {
    // Setting this.state.data to the image json array
@@ -11,7 +13,7 @@ class ImageSlider extends Component {
 
     render() {
         return (
-            <div>
+            <div className="image-slider">
 <Carousel>
         
         {this.state.data.map(img => (
